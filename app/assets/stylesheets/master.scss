@@ -1,4 +1,5 @@
 @import "_box-card.scss";
+@import "_footer.scss";
 
 h1, h2, h3, h4, h5, h6, a, p, .navbar {
 	margin: 0;
@@ -7,7 +8,6 @@ h1, h2, h3, h4, h5, h6, a, p, .navbar {
 body {
 	background: image_url('square_bg.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  padding-bottom: 50px;
 }
 
 .navbar {
@@ -57,9 +57,4 @@ span.navbar-brand {
 .feature {
 	width: 100%;
 	padding: 0 5%;
-}
-
-.alert {
-	margin-bottom: -3.1rem !important;
-	max-width: 50%;
 }

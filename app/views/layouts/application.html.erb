@@ -10,46 +10,57 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-		<%= link_to "Flixter", root_path, class: "navbar-brand mb-0 h1" %>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<% if !user_signed_in? %>
+	<div id="flex-content-container">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<%= link_to "Flixter", root_path, class: "navbar-brand mb-0 h1" %>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<% if !user_signed_in? %>
 						<%= link_to "Sign Up", new_user_registration_path, class: "nav-link"%>
-					<% else %>
+						<% else %>
 						<span class="navbar-text"><small>You are currently signed in</small></span>
-					<% end %>
-				</li>
-				<li class="nav-item ">
-					<% if user_signed_in? %>
+						<% end %>
+					</li>
+					<li class="nav-item ">
+						<% if user_signed_in? %>
 						<%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link" %>
-					<% else %>
+						<% else %>
 						<%= link_to "Log in", new_user_session_path, class: "nav-link" %>
-					<% end %>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<% if notice.present? %>
+						<% end %>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<% if notice.present? %>
 		<div class="alert alert-info alert-dismissible fade show mx-auto text-center" role="alert">
 			<%= notice %>
-  		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    		<span aria-hidden="true">&times;</span>
-  		</button>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
 		</div>
-	<% elsif alert.present? %>
+		<% elsif alert.present? %>
 		<div class="alert alert-warning alert-dismissible fade show mx-auto text-center" role="alert">
 			<%= alert %>
-	  	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-	    	<span aria-hidden="true">&times;</span>
-	  	</button>
-	  </div>
-	<% end %>
-	<%= yield %>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<% end %>
 
+		<%= yield %>
+		
+	</div>
+
+	<div id="footer">
+		<div class="container">
+			<b>Footer Here</b>
+			<br />
+			<%= link_to 'Link', '#' %>
+		</div>
+	</div>
 </body>
 </html>
