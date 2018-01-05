@@ -1,11 +1,50 @@
+h1, h2, h3, h4, h5, h6, a, p, .navbar {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica;
+	font-weight: 200;
+	letter-spacing: 1.25px;
+}
+
 .navbar {
-	font: "Helvetica Neue", Helvetica;
-	font-weight: 300;
+	font-family: "Helvetica Neue", Helvetica;
+	font-weight: 200;
+	letter-spacing: 1.5px;
 	box-shadow: 0 1px 1px rgba(0,0,0,.4);
 	background: image_url('binding.png');
 }
 
 span.navbar-brand {
-	font: "Helvetica Neue", Helvetica;
+	font-family: "Helvetica Neue", Helvetica;
 	font-weight: 100;
+	letter-spacing: 1.5px;
+}
+
+.hero {
+  background: image_url('hero.jpg') no-repeat bottom center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 480px;
+}
+
+.frosty {
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	h1, h2 {
+		font-family: "Helvetica Neue", Helvetica !important;
+	}
+	h1 {
+		font-weight: 300;
+	}
+	h2 {
+		font-weight: 200;
+	}
+	padding: 50px 100px;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+.btn {
+	border-radius: 0;
 }
