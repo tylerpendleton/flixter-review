@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.action_mail.default_url_options = { host: 'flixter-review-tyler-pendleton.herokuapp.com'}
+  config.action_mailer.default_url_options = { host: 'flixter-review-tyler-pendleton.herokuapp.com'}
 
   # Code is not reloaded between requests.
   config.cache_classes = true
