@@ -1,8 +1,11 @@
 h1, h2, h3, h4, h5, h6, a, p, .navbar {
 	margin: 0;
-	font-family: "Helvetica Neue", Helvetica;
-	font-weight: 200;
-	letter-spacing: 1.25px;
+}
+
+body {
+	background: image_url('square_bg.png');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  padding-bottom: 50px;
 }
 
 .navbar {
@@ -10,7 +13,7 @@ h1, h2, h3, h4, h5, h6, a, p, .navbar {
 	font-weight: 200;
 	letter-spacing: 1.5px;
 	box-shadow: 0 1px 1px rgba(0,0,0,.4);
-	background: image_url('binding.png');
+	background: image_url('binding_dark.png');
 }
 
 span.navbar-brand {
@@ -47,4 +50,9 @@ span.navbar-brand {
 
 .btn {
 	border-radius: 0;
+}
+
+.feature {
+	width: 100%;
+	padding: 0 5%;
 }
